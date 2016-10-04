@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+
 #这个爬虫可以抓取廖雪峰的Python教程网站上面的所有Python教程，作为看完它写的基础部分的一个小作业吧..工程耗费大概5h左右的时间，正好是开学前一天，开学后编程不会再经常碰了，所以纪念一下
 #不过速度感人...抓一个网页要3s左右...
 #作者：施程予
@@ -43,6 +45,7 @@ for re3 in re2:
 def save(url):
     re4 = urllib.urlopen(url)
     re4 = re4.read()
+
     soup = BeautifulSoup(re4) #创建对象
     re4 = soup.prettify()
     re5 = soup.body
