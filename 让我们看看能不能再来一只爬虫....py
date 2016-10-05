@@ -3,24 +3,37 @@
 
 #by scy in 10.4.lt's a practise!
 
-#解决编码问题
+#settings
+ad ='E:/python/newspaper/'
+
+#codeing
 import sys
 reload(sys)
-sys.setdefaultencoding('utf8')   #finish code problme
+sys.setdefaultencoding('utf-8')
 
-#导入变量
+#time
+import datetime
+now = datetime.datetime.now()
+now = now.strftime('%Y-%m-%d')
+
+#time and name
+adress = ad+now+'.txt'
+
+#import
 import urllib2,urllib,re,os,lxml
 import lxml.etree as etree
 
 #catch html
 re1 = urllib2.urlopen("http://top.baidu.com/").read()
-print re1
 
-
-
+#search html
 re1 = lxml.etree.HTML(re1)
-print re1
-re2 = re1.xpath('/html/body/div[@class="wrappr"]/div[@id="main"]/div[@class="row"][1]/div[@class="box-hot tab"]/div[@class="tab-bd"]/div[@class="tab-box"]/ul')
-print re2
+re2 = re1.xpath('//ul[@id="hot-list"][@class="list"]/*/a[1]')
 
+#save hrml
+for re3 in re2:
+    with open(adress,'a') as f:
+        f.write(re3.text)
+        f.write('\n')
+    print 'ok'
 
