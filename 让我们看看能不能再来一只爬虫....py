@@ -41,13 +41,17 @@ for re3 in re2:
     print 'ok'
 
 #send email
-with open(adress,"a") as d:
+with open(adress,"a+") as d:
     from email.mime.text import MIMEText
-    file =d.open()
-    pass #打开文档，并且存入对象
-    msg = MIMEText("It's a try...","plain","utf-8")
+    file =d.read()
+    #定义邮件内容
+    msg = MIMEText(file,"plain","utf-8")
+    msg['subject'] = now + '新闻摘要'
+    msg['from'] = sadress
+    msg['to'] = tadress[0]
 import smtplib
-server =smtplib.SMTP(sadress,25) #登录
+server =smtplib.SMTP('smtp.126.com',25) #登录
 server.login(sadress,key)
 server.sendmail(sadress,tadress,msg.as_string())
 server.quit()
+print 'all finished!'
