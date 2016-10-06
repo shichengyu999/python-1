@@ -5,6 +5,9 @@
 
 #settings
 ad ='E:/python/newspaper/'
+sadress = "shichengyu3@126.com"
+key ="SGs747700"
+tadress = ["shichengyu_@126.com"]
 
 #codeing
 import sys
@@ -37,3 +40,14 @@ for re3 in re2:
         f.write('\n')
     print 'ok'
 
+#send email
+with open(adress,"a") as d:
+    from email.mime.text import MIMEText
+    file =d.open()
+    pass #打开文档，并且存入对象
+    msg = MIMEText("It's a try...","plain","utf-8")
+import smtplib
+server =smtplib.SMTP(sadress,25) #登录
+server.login(sadress,key)
+server.sendmail(sadress,tadress,msg.as_string())
+server.quit()
