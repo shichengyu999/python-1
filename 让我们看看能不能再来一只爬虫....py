@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#by scy in 10.4.lt's a practise!
+#by scy in 10.4-10.6.lt's a practise!
 
 #settings
 ad ='E:/python/newspaper/'
