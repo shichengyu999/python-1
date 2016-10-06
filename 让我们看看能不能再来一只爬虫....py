@@ -50,7 +50,7 @@ with open(adress,"a+") as d:
     msg['from'] = sadress
     msg['to'] = tadress[0]
 import smtplib
-server =smtplib.SMTP('smtp.126.com',25) #登录
+server =smtplib.SMTP('smtp.126.com',25)
 server.login(sadress,key)
 server.sendmail(sadress,tadress,msg.as_string())
 server.quit()
