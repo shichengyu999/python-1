@@ -32,10 +32,8 @@ re2 = re1.xpath('//table[@class="table table-bordered table-striped  table-index
 # save html
 N = 1
 for re3 in re2:
-    N = N + 1
     with open(adress,'a') as f:
         f.write(re3.text)
-        while N % 2 ==1:
-            f.write('\n')
+        f.write('\n')
 
 print "finish"
