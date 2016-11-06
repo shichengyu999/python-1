@@ -35,5 +35,7 @@ for re3 in re2:
     with open(adress,'a') as f:
         f.write(re3.text)
         f.write('\n')
-
 print "finish"
+
+#read html
+
