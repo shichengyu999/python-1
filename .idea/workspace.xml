@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9562609a-a0f2-423b-85c2-f017e2b80b46" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SAE/PC1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/新浪云SAE/让我们看看能不能再来一只爬虫....py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ip代理爬取.py" afterPath="$PROJECT_DIR$/ip代理爬取.py" />
     </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +35,8 @@
       <file leaf-file-name="PC1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PC1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="185">
+              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -379,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476584187962</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="openshit">
+      <created>1478430013996</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1478430013996</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -448,7 +452,8 @@
     <MESSAGE value="第三只爬虫完工&#10;&#10;这次呢用上了xpath,感觉比beautisoup稍微简洁一点，还是很好用的。现在写爬虫也是越来越熟练了，几个注意点也一直在那边，不过解决方案就很好找，这次的爬虫虽然没有用函数，但是比第二个用函数的爬虫还要遵守代码规范，可以说很pythonner，所以，这次的爬虫也是供以后参考的。" />
     <MESSAGE value="邮件发送更新&#10;&#10;嗯，新给这只爬虫增加了发邮件的功能，现在需要的只是把它放进计划任务辣！运行以后就能够自动爬取当天百度风云榜的内容并且发送到邮箱，哈哈哈" />
     <MESSAGE value="这只爬虫可以爬取快代理的代理池，进一步其实是想要进化成一个函数，方便以后爬虫调用" />
-    <option name="LAST_COMMIT_MESSAGE" value="这只爬虫可以爬取快代理的代理池，进一步其实是想要进化成一个函数，方便以后爬虫调用" />
+    <MESSAGE value="openshit" />
+    <option name="LAST_COMMIT_MESSAGE" value="openshit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -567,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PC1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="185">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
           <folding />
         </state>
       </provider>
